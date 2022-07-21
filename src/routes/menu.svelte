@@ -3,7 +3,7 @@ import Navbar from "./Navbar.svelte";
 </script>
 
 <style global lang="postcss">
-    @tailwind ase;
+    @tailwind base;
     @tailwind components;
     @tailwind utilities;
 </style>
@@ -15,8 +15,8 @@ import Navbar from "./Navbar.svelte";
     <form>
         <div class = "flex flex-wrap">
 <!--            <p>The token is {bearer_token}</p>-->
-            <a href="/inventory-transfer">
-                <button class="btn btn-primary m-5 p-12">Inventory Transfer</button>
+            <a href="/vendor-finder">
+                <button class="btn btn-primary m-5 p-12">Vendor Finder</button>
             </a>
 
 

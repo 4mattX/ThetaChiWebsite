@@ -1,7 +1,22 @@
+<script context="module">
+    export async function load({session}) {
+        return {
+            props: {
+                scanned_item: session.scanned_item,
+                access_token: session.access_token
+            },
+        }
+    }
+
+
+</script>
+
 <script>
     import { Html5Qrcode, Html5QrcodeSupportedFormats as ScannerFormats } from 'html5-qrcode'
     import { onMount } from 'svelte'
     import Navbar from "./Navbar.svelte";
+    import {goto} from "$app/navigation";
+    export let access_token
 
     let scanning = false
 
@@ -51,13 +66,43 @@
         scanning = false
     }
 
-    function onScanSuccess(decodedText, decodedResult) {
-        alert(`Code matched = ${decodedText}`)
-        console.log(decodedResult)
+    async function onScanSuccess(decodedText, decodedResult) {
+
+
+        // alert(`Code matched = ${decodedText}`)
+
+        const restlet_url = 'https://cors-anywhere.herokuapp.com/https://7640830.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=764&deploy=1&upc=' + decodedText.toString()
+
+        const itemObject = await getData(restlet_url)
+        console.log(itemObject)
+
+        let itemName = JSON.parse(itemObject).fields.itemid
+        let itemPrice = JSON.parse(itemObject).sublists.price["line 1"]["price[1]"]
+        let itemDescription = JSON.parse(itemObject).fields.salesdescription
+
+
+        // goto(`/qs/${decodedText}`)
+        goto(`/qs/${decodedText}-${itemName}-${itemPrice}-${itemDescription}`)
+        // console.log(decodedResult)
+
     }
 
+    async function getData(restlet_url) {
+
+
+
+        return JSON.stringify(await fetch(restlet_url, {
+            headers: {
+                Accept: 'application/json',
+                Authorization: `Bearer ${access_token}`
+            }
+        }).then(r => r.json()))
+    }
+
+
+
     function onScanFailure(error) {
-        console.warn(`Code scan error = ${error}`)
+        // console.warn(`Code scan error = ${error}`)
     }
 </script>
 
