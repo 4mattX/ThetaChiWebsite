@@ -13,11 +13,11 @@
     export let token_expiration
     let login = true
 
-    // console.log("Token Expiration: " + token_expiration)
-    //
-    // if (getDate() - token_expiration >= 3600000) {
-    //     login = true
-    // }
+    console.log("Token Expiration: " + token_expiration)
+
+    if ((getDate() - token_expiration) < 3600000) {
+        login = false;
+    }
 
     function getDate() {
         return new Date().getTime()

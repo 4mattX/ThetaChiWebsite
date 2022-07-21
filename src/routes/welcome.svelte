@@ -27,8 +27,8 @@
             <h2>Aaron Lebato</h2>
         </div>
 
-        <a href="/menu" class="btn btn-primary my-2 px-10">Menu</a>
-        <a href="/quickscan" class="btn btn-primary my-2 px-10">Quickscan</a>
+        <a href="/menu" class="btn btn-primary my-2 px-5">Menu</a>
+        <a href="/quickscan" class="btn btn-primary my-2 px-5">Quickscan</a>
 
         <div class="py-20">
 

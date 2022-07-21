@@ -1,4 +1,4 @@
-<div class="navbar bg-base-100">
+<div class="navbar bg-accent text-white">
     <div class="flex-1">
         <a class="btn btn-ghost normal-case text-xl hr" href="/welcome">Fiber Track</a>
     </div>
