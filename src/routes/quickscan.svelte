@@ -76,13 +76,14 @@
 
         const itemObject = await getData(restlet_url)
 
+        let itemId = JSON.parse(itemObject).id
         let itemName = JSON.parse(itemObject).fields.itemid
         let itemPrice = JSON.parse(itemObject).sublists.price["line 1"]["price[1]"]
         let itemDescription = JSON.parse(itemObject).fields.salesdescription
 
 
         // goto(`/qs/${decodedText}`)
-        goto(`/qs/${decodedText}-${itemName}-${itemPrice}-${itemDescription}`)
+        goto(`/qs/${itemId}-${itemName}-${itemPrice}-${itemDescription}`)
         // console.log(decodedResult)
 
     }
