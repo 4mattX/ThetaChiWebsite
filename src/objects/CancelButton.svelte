@@ -1,0 +1,1 @@
+<button class="btn btn-neutral shadow-xl outline-4 my-2 px-10 mx-2">Cancel</button>

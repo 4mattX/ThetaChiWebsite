@@ -6,6 +6,17 @@
     const itemPrice = $page.params.price
     const itemDescription = $page.params.description
 
+    let selected = null
+
+    let options = [
+        'Receive in System',
+        'Inventory Transfer',
+        'Intercompany Transfer Order',
+        'Inventory Adjustment'
+    ]
+
+    let invTransURL = `/inv_trans/${itemId}-${itemName}`
+
 </script>
 
 <style global lang="postcss">
@@ -35,17 +46,34 @@
 
 
             <div class="flex flex-col justify-center items-center">
-                <select class="select select-primary w-full max-w-xs my-10">
-                    <option disabled selected>Item Action</option>
-                    <option>Receive in System</option>
-                    <option>Inventory Transfer</option>
-                    <option>Intercompany Transfer Order</option>
-                    <option>Inventory Adjustment</option>
+                <div class="px-20"><span class="prose prose-lg">Item Action</span><span class="text-amber-600">*</span></div>
+                <select bind:value={selected} class="select select-primary w-full max-w-xs">
+                    {#each options as value}<option {value}>{value}</option>{/each}
                 </select>
 
                 <div>
                     <a href="/welcome" class="btn btn-neutral shadow-xl outline-4 my-2 px-10 mx-2">Cancel</a>
-                    <a href="/menu" class="btn btn-primary shadow-xl my-2 px-8 mx-2">Continue</a>
+
+                    {#if selected == 'Item Action'}
+                        <a href="/menu" class="btn btn-primary shadow-xl my-2 px-8 mx-2">Continue</a>
+                    {/if}
+
+                    {#if selected == 'Receive in System'}
+                        <a href="/vendor-finder" class="btn btn-primary shadow-xl my-2 px-8 mx-2">Continue</a>
+                    {/if}
+                    {#if selected == 'Inventory Transfer'}
+                        <a href={invTransURL} class="btn btn-primary shadow-xl my-2 px-8 mx-2">Continue</a>
+                    {/if}
+
+                    {#if selected == 'Intercompany Transfer Order'}
+                        <a href="/vendor-finder" class="btn btn-primary shadow-xl my-2 px-8 mx-2">Continue</a>
+                    {/if}
+
+                    {#if selected == 'Inventory Adjustment'}
+                        <a href="/vendor-finder" class="btn btn-primary shadow-xl my-2 px-8 mx-2">Continue</a>
+                    {/if}
+
+
                 </div>
             </div>
 

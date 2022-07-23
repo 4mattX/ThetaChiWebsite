@@ -25,27 +25,28 @@
     onMount(init)
 
     function init() {
-        html5Qrcode = new Html5Qrcode('reader', {
-            formatsToSupport: [
-                ScannerFormats.QR_CODE,
-                ScannerFormats.AZTEC,
-                ScannerFormats.CODABAR,
-                ScannerFormats.CODE_39,
-                ScannerFormats.CODE_93,
-                ScannerFormats.CODE_128,
-                ScannerFormats.DATA_MATRIX,
-                ScannerFormats.MAXICODE,
-                ScannerFormats.ITF,
-                ScannerFormats.EAN_13,
-                ScannerFormats.EAN_8,
-                ScannerFormats.PDF_417,
-                ScannerFormats.RSS_14,
-                ScannerFormats.RSS_EXPANDED,
-                ScannerFormats.UPC_A,
-                ScannerFormats.UPC_E,
-                ScannerFormats.UPC_EAN_EXTENSION,
-            ]
-        })
+        html5Qrcode = new Html5Qrcode('reader')
+        // html5Qrcode = new Html5Qrcode('reader', {
+        //     formatsToSupport: [
+        //         ScannerFormats.QR_CODE,
+        //         ScannerFormats.AZTEC,
+        //         ScannerFormats.CODABAR,
+        //         ScannerFormats.CODE_39,
+        //         ScannerFormats.CODE_93,
+        //         ScannerFormats.CODE_128,
+        //         ScannerFormats.DATA_MATRIX,
+        //         ScannerFormats.MAXICODE,
+        //         ScannerFormats.ITF,
+        //         ScannerFormats.EAN_13,
+        //         ScannerFormats.EAN_8,
+        //         ScannerFormats.PDF_417,
+        //         ScannerFormats.RSS_14,
+        //         ScannerFormats.RSS_EXPANDED,
+        //         ScannerFormats.UPC_A,
+        //         ScannerFormats.UPC_E,
+        //         ScannerFormats.UPC_EAN_EXTENSION,
+        //     ]
+        // })
     }
 
     function start() {
@@ -53,7 +54,7 @@
             { facingMode: 'environment' },
             {
                 fps: 10,
-                qrbox: { width: 300, height: 300 },
+                qrbox: { width: 350, height: 350 },
             },
             onScanSuccess,
             onScanFailure
@@ -68,13 +69,12 @@
 
     async function onScanSuccess(decodedText, decodedResult) {
 
-
+        await html5Qrcode.stop()
         // alert(`Code matched = ${decodedText}`)
 
         const restlet_url = 'https://cors-anywhere.herokuapp.com/https://7640830.restlets.api.netsuite.com/app/site/hosting/restlet.nl?script=764&deploy=1&upc=' + decodedText.toString()
 
         const itemObject = await getData(restlet_url)
-        console.log(itemObject)
 
         let itemName = JSON.parse(itemObject).fields.itemid
         let itemPrice = JSON.parse(itemObject).sublists.price["line 1"]["price[1]"]
