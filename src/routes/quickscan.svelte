@@ -15,10 +15,12 @@
     import { Html5Qrcode, Html5QrcodeSupportedFormats as ScannerFormats } from 'html5-qrcode'
     import { onMount } from 'svelte'
     import Navbar from "./Navbar.svelte";
+    import InfoNav from "../navbars/InfoNav.svelte";
     import {goto} from "$app/navigation";
     export let access_token
 
     let scanning = false
+    let loading = false
 
     let html5Qrcode
 
@@ -26,27 +28,6 @@
 
     function init() {
         html5Qrcode = new Html5Qrcode('reader')
-        // html5Qrcode = new Html5Qrcode('reader', {
-        //     formatsToSupport: [
-        //         ScannerFormats.QR_CODE,
-        //         ScannerFormats.AZTEC,
-        //         ScannerFormats.CODABAR,
-        //         ScannerFormats.CODE_39,
-        //         ScannerFormats.CODE_93,
-        //         ScannerFormats.CODE_128,
-        //         ScannerFormats.DATA_MATRIX,
-        //         ScannerFormats.MAXICODE,
-        //         ScannerFormats.ITF,
-        //         ScannerFormats.EAN_13,
-        //         ScannerFormats.EAN_8,
-        //         ScannerFormats.PDF_417,
-        //         ScannerFormats.RSS_14,
-        //         ScannerFormats.RSS_EXPANDED,
-        //         ScannerFormats.UPC_A,
-        //         ScannerFormats.UPC_E,
-        //         ScannerFormats.UPC_EAN_EXTENSION,
-        //     ]
-        // })
     }
 
     function start() {
@@ -63,8 +44,9 @@
     }
 
     async function stop() {
-        await html5Qrcode.stop()
         scanning = false
+        await html5Qrcode.stop()
+        loading = true
     }
 
     async function onScanSuccess(decodedText, decodedResult) {
@@ -109,30 +91,47 @@
 
 <style>
 
-    main {
+    cam {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
     reader {
-        width: 100vh;
+        width: 120vh;
         /*min-height: 100vh;*/
         background-size: cover;
         background-color: black;
     }
 </style>
 
+
 <main>
-    <Navbar />
-    <div ></div>
-    <reader id="reader"/>
+
+    <cam>
+        <reader id="reader"/>
+    </cam>
+
+
 
     {#if scanning}
-        <button on:click={stop} class="btn btn-primary m-5">stop</button>
+        <div class="flex flex-col justify-center items-center">
+            <button on:click={stop} class="btn btn-primary m-5">stop</button>
+        </div>
+    {:else if loading}
+        <div class="prose prose-2xl">
+            <h1>LOADING!</h1>
+        </div>
     {:else}
-        <button on:click={start} class="btn btn-primary m-5">start</button>
+        <Navbar />
+        <InfoNav title="Quick Scan" />
+        <div class="my-36 flex flex-col justify-center items-center">
+            <button on:click={start} class="btn btn-primary m-5">start</button>
+        </div>
     {/if}
+
+
+
 
 
 </main>

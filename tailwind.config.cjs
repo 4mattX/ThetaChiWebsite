@@ -6,7 +6,7 @@ module.exports = {
       {
         netsuite: {
           "primary": "#2869fc",
-          "secondary": "#ededed",
+          "secondary": "#dbdbdb",
           "accent": "#5f7999",
           "neutral": "#dfe5ed",
           "base-100": "#FFFFFF",

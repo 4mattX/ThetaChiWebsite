@@ -10,6 +10,7 @@
 
 <script>
     import Navbar from "../Navbar.svelte";
+    import InfoNav from "../../navbars/InfoNav.svelte";
     import {page} from '$app/stores'
     import CounterButton from "../../objects/CounterButton.svelte";
     import CancelButton from "../../objects/CancelButton.svelte";
@@ -109,8 +110,10 @@
 
 <main>
     <Navbar />
+    <InfoNav title={'Inventory Transfer'} />
+<div class="py-32 px-5 bg-secondary">
+    <div class="flex flex-col justify-center items-center bg-white p-3 rounded-xl">
 
-    <div class="flex flex-col justify-center items-center">
         <div class="prose">
 
             <div class="my-10"></div>
@@ -181,15 +184,17 @@
                 </div>
             </div>
 
+<!--            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
+
         </div>
 
         <div class="my-5"></div>
 
-        <div>
-            <a href="/welcome" > <CancelButton /> </a>
-<!--            <SubmitButton on:click={displayInfo} />-->
+        <div class="btm-nav-md fixed bottom-0 bg-white w-screen flex flex-row justify-center">
+            <button on:click={transferInventory} class="btn btn-neutral shadow-xl my-2 px-10 mx-2">Cancel</button>
             <button on:click={transferInventory} class="btn btn-primary shadow-xl my-2 px-10 mx-2">Submit</button>
         </div>
 
     </div>
+</div>
 </main>
