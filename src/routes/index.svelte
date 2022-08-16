@@ -32,9 +32,9 @@
 
             <div class="py-20"></div>
 
-            <div class="prose-2xl text-white text-center drop-shadow-xl">
+            <div class="prose-2xl text-white text-center drop-shadow-xl font-serif">
                 <h1>Theta Chi</h1>
-                <h3>Theta Rho Chapter</h3>
+                <h3 class="font-bold">Theta Rho Chapter</h3>
             </div>
 
             <div class="py-96"></div>
