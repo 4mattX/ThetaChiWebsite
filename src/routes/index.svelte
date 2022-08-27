@@ -7,6 +7,7 @@
 
     import Background from "../backgrounds/Background.svelte";
     import Navbar from "../navbars/Navbar.svelte";
+    import About from "../page-sections/About.svelte";
     import PolygonHeader from "../objects/PolygonHeader.svelte";
 </script>
 
@@ -22,11 +23,13 @@
 <main >
     <Navbar />
 
+
     <Background />
+
 
 <!--    <PolygonHeader />-->
 
-    <div style:transform={`translate3d(0, ${scroll * 2.5}px, 0)`}>
+<!--    <div style:transform={`translate3d(0, ${scroll * 2.5}px, 0)`}>-->
 
         <div class="flex flex-col justify-center items-center relative ">
 
@@ -37,12 +40,15 @@
                 <h3 class="font-bold">Theta Rho Chapter</h3>
             </div>
 
-            <div class="py-96"></div>
-            <div class="py-96"></div>
+            <div class="py-80"></div>
 
-
+        <About />
         </div>
-    </div>
+<!--    </div>-->
+
+
+
+
 
 
 

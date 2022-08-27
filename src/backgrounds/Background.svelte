@@ -18,11 +18,12 @@
 
 <!--<main class="z-0">-->
 
-    <div class="w-full h-full bg-no-repeat bg-cover bg-fixed absolute overflow-x-hidden">
+    <div class="w-full h-full bg-no-repeat bg-cover absolute overflow-x-hidden">
         <svg class="w-screen h-screen bg-cover" style="background-image: url('{bgImage}')" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <polygon style="fill-opacity: 80%; fill:#2b303c" points="100 91, 0 100, 100 100" />
-            <polygon style="fill-opacity: 60%; fill:#2b303c" points="100 87, 0 100, 100 100" />
-            <polygon style="fill-opacity: 50%; fill:#2b303c" points="100 82, 0 100, 100 100" />
+                <polygon class="fill-base-100" style="fill-opacity: 80%" points="100 91, 0 100, 100 100" />
+                <polygon class="fill-base-100" style="fill-opacity: 60%" points="100 87, 0 100, 100 100" />
+                <polygon class="fill-base-100" style="fill-opacity: 50%" points="100 82, 0 100, 100 100" />
+
 <!--            <polygon style="fill-opacity: 60%; fill:#000" points="0 93, 0 100, 100 100" />-->
 <!--            <polygon style="fill-opacity: 60%; fill:#000" points="0 96, 0 100, 100 100" />-->
         </svg>
