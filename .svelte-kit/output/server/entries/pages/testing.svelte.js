@@ -1,0 +1,28 @@
+import { c as create_ssr_component, h as createEventDispatcher, e as escape } from "../../chunks/index-ba4a3d31.js";
+var testing_svelte_svelte_type_style_lang = /* @__PURE__ */ (() => `article.svelte-jmwxwj{position:relative;padding:2rem;border-radius:20px;width:140px;height:165px;transition:transform 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);transform:perspective(800px) rotateY(0deg);transform-style:preserve-3d}.flip.svelte-jmwxwj{transform:perspective(800px) rotateY(180deg)}.paired.svelte-jmwxwj{-webkit-animation:svelte-jmwxwj-pair 0.25s 1s ease-in-out 2 alternate;animation:svelte-jmwxwj-pair 0.25s 1s ease-in-out 2 alternate}@-webkit-keyframes svelte-jmwxwj-pair{25%{transform:rotateZ(-5deg)}75%{transform:rotateZ(5deg)}}@keyframes svelte-jmwxwj-pair{25%{transform:rotateZ(-5deg)}75%{transform:rotateZ(5deg)}}.face.svelte-jmwxwj,button.svelte-jmwxwj{position:absolute;top:0;left:0;width:100%;height:100%;border-radius:inherit}button.svelte-jmwxwj{background:none;border:none}.face.svelte-jmwxwj{-webkit-backface-visibility:hidden;backface-visibility:hidden;border:0.75rem solid hsl(340, 70%, 50%);background:hsl(0, 0%, 100%);pointer-events:none}.back.svelte-jmwxwj{background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="200" height="200"><defs><path id="a" d="M0-50L50 0 0 50-50 0z" stroke="none"/><g id="b"><use href="%23a" fill="hsl(340, 70%, 50%)"/><use href="%23a" transform="scale(.8)" fill="hsl(345, 90%, 65%)"/><use href="%23a" transform="scale(.6)" fill="hsl(0, 90%, 60%)"/><use href="%23a" transform="scale(.4)" fill="hsl(30, 80%, 70%)"/><use href="%23a" transform="scale(.2)" fill="hsl(50, 95%, 80%)"/></g></defs><use href="%23b"/><use href="%23b" x="100"/><use href="%23b" x="100" y="100"/><use href="%23b" y="100"/><use href="%23b" x="50" y="50"/></svg>'),\r
+        hsl(0, 0%, 100%);background-size:25%;transform:rotateY(180deg)}.front.svelte-jmwxwj{background:url('data:image/svg+xml;utf8,<svg opacity="0.1" xmlns="http://www.w3.org/2000/svg" width="480" height="440" viewBox="0 0 240 220" stroke="hsl(340, 70%, 50%)" stroke-width="20" stroke-linejoin="round" stroke-linecap="round" fill="none"><g transform="translate(120 110) rotate(-35)"><path id="a" d="M50-22.5h-60 25a45 45 0 010 90h-75a45 45 0 010-90"/><use transform="scale(-1)" href="%23a"/></g></svg>'),\r
+        hsl(0, 0%, 100%);background-repeat:no-repeat;background-size:100%;background-position:50% 50%;display:flex;justify-content:center;align-items:center}h1.svelte-jmwxwj{font-size:2.5rem;font-weight:900}`)();
+const css = {
+  code: `article.svelte-jmwxwj{position:relative;padding:2rem;border-radius:20px;width:140px;height:165px;transition:transform 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);transform:perspective(800px) rotateY(0deg);transform-style:preserve-3d}.flip.svelte-jmwxwj{transform:perspective(800px) rotateY(180deg)}.paired.svelte-jmwxwj{animation:svelte-jmwxwj-pair 0.25s 1s ease-in-out 2 alternate}@keyframes svelte-jmwxwj-pair{25%{transform:rotateZ(-5deg)}75%{transform:rotateZ(5deg)}}.face.svelte-jmwxwj,button.svelte-jmwxwj{position:absolute;top:0;left:0;width:100%;height:100%;border-radius:inherit}button.svelte-jmwxwj{background:none;border:none}.face.svelte-jmwxwj{backface-visibility:hidden;border:0.75rem solid hsl(340, 70%, 50%);background:hsl(0, 0%, 100%);pointer-events:none}.back.svelte-jmwxwj{background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="200" height="200"><defs><path id="a" d="M0-50L50 0 0 50-50 0z" stroke="none"/><g id="b"><use href="%23a" fill="hsl(340, 70%, 50%)"/><use href="%23a" transform="scale(.8)" fill="hsl(345, 90%, 65%)"/><use href="%23a" transform="scale(.6)" fill="hsl(0, 90%, 60%)"/><use href="%23a" transform="scale(.4)" fill="hsl(30, 80%, 70%)"/><use href="%23a" transform="scale(.2)" fill="hsl(50, 95%, 80%)"/></g></defs><use href="%23b"/><use href="%23b" x="100"/><use href="%23b" x="100" y="100"/><use href="%23b" y="100"/><use href="%23b" x="50" y="50"/></svg>'),\r
+        hsl(0, 0%, 100%);background-size:25%;transform:rotateY(180deg)}.front.svelte-jmwxwj{background:url('data:image/svg+xml;utf8,<svg opacity="0.1" xmlns="http://www.w3.org/2000/svg" width="480" height="440" viewBox="0 0 240 220" stroke="hsl(340, 70%, 50%)" stroke-width="20" stroke-linejoin="round" stroke-linecap="round" fill="none"><g transform="translate(120 110) rotate(-35)"><path id="a" d="M50-22.5h-60 25a45 45 0 010 90h-75a45 45 0 010-90"/><use transform="scale(-1)" href="%23a"/></g></svg>'),\r
+        hsl(0, 0%, 100%);background-repeat:no-repeat;background-size:100%;background-position:50% 50%;display:flex;justify-content:center;align-items:center}h1.svelte-jmwxwj{font-size:2.5rem;font-weight:900}`,
+  map: null
+};
+const Testing = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  createEventDispatcher();
+  let { card } = $$props;
+  if ($$props.card === void 0 && $$bindings.card && card !== void 0)
+    $$bindings.card(card);
+  $$result.css.add(css);
+  return `
+
+<article class="${[
+    "svelte-jmwxwj",
+    (card.isFlipped && !card.isPaired ? "flip" : "") + " " + (card.isPaired ? "paired" : "")
+  ].join(" ").trim()}"><div class="${"face front svelte-jmwxwj"}"><h1 style="${"color: " + escape(card.value.includes("\u2665") || card.value.includes("\u2666") ? "hsl(0, 70%, 50%)" : "hsl(0, 50%, 5%)", true)}" class="${"svelte-jmwxwj"}">${escape(card.value)}</h1></div>
+    <div class="${"face back svelte-jmwxwj"}"></div>
+    
+    <button ${card.isPaired ? "disabled" : ""} aria-label="${"Flip card"}" class="${"svelte-jmwxwj"}"></button>
+</article>`;
+});
+export { Testing as default };
