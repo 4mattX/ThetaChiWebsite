@@ -11,5 +11,11 @@ export default defineConfig({
 	https: {
 		key: fs.readFileSync('certificate.crt'),
 		cert: fs.readFileSync('certificate.key')
+	},
+	resolve: {
+		dedupe:  ['@fullcalendar/common'],
+	},
+	optimizeDeps: {
+		include: ['@fullcalendar/common'],
 	}
 })

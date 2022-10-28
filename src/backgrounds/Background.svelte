@@ -2,7 +2,21 @@
 
     let bgImage = 'image1.JPG'
 
-    // let bgImage = 'https://www.business2community.com/wp-content/uploads/2015/10/42454567_m.jpg.jpg'
+    let images = []
+    images.push('image4.JPG', 'image2.jpg','image3.jpg', 'image1.JPG', 'image5.JPG', 'image6.jpg', 'image7.jpg')
+    images.push()
+
+    let time = 8;
+
+    setInterval(() => {
+        time--;
+
+        if (time <= 0) {
+            time = 8
+            bgImage = images.shift()
+            images.push(bgImage)
+        }
+    }, 1000);
 
 </script>
 
@@ -10,6 +24,9 @@
     @tailwind base;
     @tailwind components;
     @tailwind utilities;
+    .image-container {
+        transition: all 0.5s ease;
+    }
 </style>
 
 <!--<main>-->
@@ -18,11 +35,12 @@
 
 <!--<main class="z-0">-->
 
-    <div class="w-full h-full bg-no-repeat bg-cover absolute overflow-x-hidden">
-        <svg class="w-screen h-screen bg-cover" style="background-image: url('{bgImage}')" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <div class="w-full h-full bg-center bg-no-repeat bg-cover absolute overflow-x-hidden">
+        <svg class="w-screen h-screen bg-cover image-container" style="background-image: url('{bgImage}')" viewBox="0 0 100 100" preserveAspectRatio="none">
                 <polygon class="fill-base-100" style="fill-opacity: 80%" points="100 91, 0 100, 100 100" />
                 <polygon class="fill-base-100" style="fill-opacity: 60%" points="100 87, 0 100, 100 100" />
                 <polygon class="fill-base-100" style="fill-opacity: 50%" points="100 82, 0 100, 100 100" />
+
 
 <!--            <polygon style="fill-opacity: 60%; fill:#000" points="0 93, 0 100, 100 100" />-->
 <!--            <polygon style="fill-opacity: 60%; fill:#000" points="0 96, 0 100, 100 100" />-->
