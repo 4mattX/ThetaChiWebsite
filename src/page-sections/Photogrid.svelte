@@ -21,7 +21,7 @@
             </div>
             <div class="w-full md:w-1/2 lg:w-1/4 mb-4 relative p-4">
                 <p class="absolute left-1/2 -translate-x-1/2 py-48 font-bold text-white text-4xl drop-shadow-2xl">SERVICE</p>
-                <img src="frontimage1.png" alt="">
+                <img src="frontimage4.png" alt="">
             </div>
         </div>
 

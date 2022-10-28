@@ -2,10 +2,24 @@
     import Crest from '../assets/Crest.svelte'
     import { onMount } from 'svelte'
     import { themeChange } from 'theme-change'
+    import {page} from "$app/stores";
 
     onMount(() => {
         themeChange(false)
     })
+
+    function scrollIntoView({ target }) {
+
+        if ($page.url.pathname != '/') {
+            window.location.href="/"
+        }
+
+        const el = document.querySelector(target.getAttribute('href'));
+        if (!el) return;
+        el.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
 </script>
 
 <style global lang="postcss">
@@ -21,8 +35,8 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
             </label>
             <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a>About</a></li>
-                <li><a>Alumni</a></li>
+                <li><a href="#about" on:click|preventDefault={scrollIntoView}>About</a></li>
+                <li><a href="#alumni" on:click|preventDefault={scrollIntoView}>Alumni</a></li>
                 <li><a href="/calendar">Calendar</a></li>
                 <li tabindex="0">
                     <a>
@@ -33,7 +47,7 @@
                         <li><a href="https://portal.thetachi.org/" target="_blank">MyThetaChi</a></li>
                         <li><a href="https://www.greekbill.com/" target="_blank">GreekBill</a></li>
                         <li><a href="/officers" >Officers</a></li>
-                        <li><a>By-Laws</a></li>
+                        <li><a href="/bylaws">By-Laws</a></li>
 
                     </ul>
                 </li>
