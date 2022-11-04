@@ -10,6 +10,11 @@
       "src/hooks.js"
     ]
   },
+  "src/routes/+layout.js": {
+    "file": "entries/endpoints/_layout.js",
+    "src": "src/routes/+layout.js",
+    "isEntry": true
+  },
   ".svelte-kit/runtime/components/layout.svelte": {
     "file": "entries/fallbacks/layout.svelte.js",
     "src": ".svelte-kit/runtime/components/layout.svelte",

@@ -3,7 +3,7 @@ export const manifest = {
 	assets: new Set(["about_image.png","favicon.png","frontimage1.png","frontimage2.png","frontimage3.png","frontimage4.png","image1.JPG","image2.jpg","image3.jpg","image4.JPG","image5.JPG","image6.jpg","image7.jpg","nothing.png","thetachi_local.PNG","thetachi_national.png"]),
 	mimeTypes: {".png":"image/png",".JPG":"image/jpeg",".jpg":"image/jpeg",".PNG":"image/png"},
 	_: {
-		entry: {"file":"start-552d44ce.js","imports":["start-552d44ce.js","chunks/index-780ad2c9.js","chunks/preload-helper-60cab3ee.js"],"stylesheets":[]},
+		entry: {"file":"start-6ab78c8e.js","imports":["start-6ab78c8e.js","chunks/index-97917cf1.js","chunks/preload-helper-60cab3ee.js"],"stylesheets":[]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),
@@ -25,6 +25,14 @@ export const manifest = {
 				shadow: null,
 				a: [0,2],
 				b: [1]
+			},
+			{
+				type: 'endpoint',
+				id: "+layout",
+				pattern: /^\/\+layout\/?$/,
+				names: [],
+				types: [],
+				load: () => import('./entries/endpoints/_layout.js')
 			},
 			{
 				type: 'page',
