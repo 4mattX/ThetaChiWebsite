@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-6ab78c8e.js",
+    "file": "start-1f8f30c2.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -37,7 +37,7 @@
     ]
   },
   "src/routes/bylaws.svelte": {
-    "file": "pages/bylaws.svelte-06164f0c.js",
+    "file": "pages/bylaws.svelte-d797500a.js",
     "src": "src/routes/bylaws.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -53,7 +53,7 @@
     ]
   },
   "src/routes/calendar.svelte": {
-    "file": "pages/calendar.svelte-0df789ac.js",
+    "file": "pages/calendar.svelte-94718e27.js",
     "src": "src/routes/calendar.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -68,7 +68,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-024c3cf3.js",
+    "file": "pages/index.svelte-60b7d03b.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -84,7 +84,7 @@
     ]
   },
   "src/routes/officers.svelte": {
-    "file": "pages/officers.svelte-f86fb849.js",
+    "file": "pages/officers.svelte-610659d3.js",
     "src": "src/routes/officers.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -115,7 +115,7 @@
     ]
   },
   "src/routes/positions.svelte": {
-    "file": "pages/positions.svelte-499baa5f.js",
+    "file": "pages/positions.svelte-42bbf050.js",
     "src": "src/routes/positions.svelte",
     "isEntry": true,
     "isDynamicEntry": true,

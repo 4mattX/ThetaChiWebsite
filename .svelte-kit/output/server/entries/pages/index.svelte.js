@@ -155,6 +155,7 @@ const css = {
   code: "@tailwind base;@tailwind components;@tailwind utilities;.text.svelte-1j5psol{position:absolute;top:50%;right:50%;transform:translate(50%,-50%);text-transform:uppercase;font-family:verdana;font-size:5.5rem;font-weight:700;text-shadow:1px 1px 1px #919191,\r\n        1px 2px 1px #919191,\r\n        1px 3px 1px #919191,\r\n        1px 4px 1px #919191,\r\n        1px 5px 1px #919191,\r\n        1px 6px 1px #919191,\r\n        1px 7px 1px #919191,\r\n        1px 8px 1px #919191,\r\n        1px 9px 1px #919191,\r\n        1px 10px 1px #919191,\r\n        1px 18px 6px rgba(0,0,0,0.4),\r\n        1px 22px 10px rgba(0,0,0,0.2),\r\n        1px 25px 35px rgba(0,0,0,0.2),\r\n        1px 30px 60px rgba(0,0,0,0.4)}",
   map: null
 };
+const prerender = true;
 const Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let innerWidth;
   let scroll;
@@ -196,4 +197,4 @@ const Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         ${validate_component(Filler2, "Filler2").$$render($$result, {}, {}, {})}
         ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}</main>`;
 });
-export { Routes as default };
+export { Routes as default, prerender };

@@ -49,6 +49,7 @@ const css = {
   code: "@tailwind base;@tailwind components;@tailwind utilities;",
   map: null
 };
+const prerender = true;
 const Calendar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let options = {
     plugins: [googleCalendarPlugin, daygridPlugin],
@@ -73,4 +74,4 @@ const Calendar = create_ssr_component(($$result, $$props, $$bindings, slots) => 
 
 </main>`;
 });
-export { Calendar as default };
+export { Calendar as default, prerender };

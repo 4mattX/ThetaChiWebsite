@@ -7,8 +7,9 @@ const css = {
   code: "@tailwind base;@tailwind components;@tailwind utilities;",
   map: null
 };
+const prerender = true;
 const Positions = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `<main>${validate_component(Navbar, "Navbar").$$render($$result, {}, {}, {})}</main>`;
 });
-export { Positions as default };
+export { Positions as default, prerender };

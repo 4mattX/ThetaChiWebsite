@@ -56,6 +56,7 @@ const css = {
   code: "@tailwind base;@tailwind components;@tailwind utilities;",
   map: null
 };
+const prerender = true;
 const Officers = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   const officers = [
     {
@@ -126,4 +127,4 @@ const Officers = create_ssr_component(($$result, $$props, $$bindings, slots) => 
 
     ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}</main>`;
 });
-export { Officers as default };
+export { Officers as default, prerender };

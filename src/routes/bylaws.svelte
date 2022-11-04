@@ -1,3 +1,7 @@
+<script context="module">
+    export const prerender = true;
+</script>
+
 <script>
     import Navbar from "../navbars/Navbar.svelte";
     import MobileNavbar from "../navbars/MobileNavbar.svelte";
@@ -35,7 +39,7 @@
                 <h2 class="card-title">National By Laws</h2>
                 <p>Click to view Theta Chi's National & Public By Laws.</p>
                 <div class="card-actions justify-end">
-                    <a href="src/assets/national_bylaws.pdf" role="button" class="btn btn-primary" target="_blank">View</a>
+                    <a href="national_bylaws.pdf" role="button" class="btn btn-primary" target="_blank">View</a>
                 </div>
             </div>
         </div>
@@ -46,7 +50,7 @@
                 <h2 class="card-title">Local By Laws</h2>
                 <p>Click to view Theta Chi Theta Rho's Local & Public By Laws.</p>
                 <div class="card-actions justify-end">
-                    <a href="src/assets/local_bylaws.pdf" role="button" class="btn btn-primary" target="_blank">View</a>
+                    <a href="local_bylaws.pdf" role="button" class="btn btn-primary" target="_blank">View</a>
                 </div>
             </div>
         </div>

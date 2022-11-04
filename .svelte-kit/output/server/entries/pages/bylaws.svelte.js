@@ -17,6 +17,7 @@ const css = {
   code: "@tailwind base;@tailwind components;@tailwind utilities;",
   map: null
 };
+const prerender = true;
 const Bylaws = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `
@@ -28,16 +29,16 @@ const Bylaws = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     <div class="${"py-36 flex w-full h-screen flex-wrap content-center content-center items-center justify-center place-items-center bg-secondary"}"><div class="${"card w-96 bg-base-100 shadow-xl image-full m-20"}"><figure><img src="${"thetachi_national.png"}" alt="${"National"}"></figure>
             <div class="${"card-body"}"><h2 class="${"card-title"}">National By Laws</h2>
                 <p>Click to view Theta Chi&#39;s National &amp; Public By Laws.</p>
-                <div class="${"card-actions justify-end"}"><a href="${"src/assets/national_bylaws.pdf"}" role="${"button"}" class="${"btn btn-primary"}" target="${"_blank"}">View</a></div></div></div>
+                <div class="${"card-actions justify-end"}"><a href="${"national_bylaws.pdf"}" role="${"button"}" class="${"btn btn-primary"}" target="${"_blank"}">View</a></div></div></div>
 
         <div class="${"card w-96 bg-base-100 shadow-xl image-full m-20"}"><figure><img src="${"thetachi_local.PNG"}" alt="${"Local"}"></figure>
             <div class="${"card-body"}"><h2 class="${"card-title"}">Local By Laws</h2>
                 <p>Click to view Theta Chi Theta Rho&#39;s Local &amp; Public By Laws.</p>
-                <div class="${"card-actions justify-end"}"><a href="${"src/assets/local_bylaws.pdf"}" role="${"button"}" class="${"btn btn-primary"}" target="${"_blank"}">View</a></div></div></div></div>
+                <div class="${"card-actions justify-end"}"><a href="${"local_bylaws.pdf"}" role="${"button"}" class="${"btn btn-primary"}" target="${"_blank"}">View</a></div></div></div></div>
     ${validate_component(Background3, "Background3").$$render($$result, {}, {}, {})}
 
 
 
     ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}</main>`;
 });
-export { Bylaws as default };
+export { Bylaws as default, prerender };
