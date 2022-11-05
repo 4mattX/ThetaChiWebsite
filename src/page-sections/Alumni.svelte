@@ -1,4 +1,6 @@
-
+<script context="module">
+    export const prerender = true;
+</script>
 
 <main class="bg-neutral">
     <div class="py-16">
