@@ -3,11 +3,19 @@
 </script>
 
 <script>
+    import image1 from "../assets/images/image1.jpg"
+    import image2 from "../assets/images/image2.jpg"
+    import image3 from "../assets/images/image3.jpg"
+    import image4 from "../assets/images/image4.jpg"
+    import image5 from "../assets/images/image5.jpg"
+    import image6 from "../assets/images/image6.jpg"
+    import image7 from "../assets/images/image7.jpg"
 
-    let bgImage = 'image1.JPG'
+
+    let bgImage = image1
 
     let images = []
-    images.push('image4.JPG', 'image2.jpg','image3.jpg', 'image1.JPG', 'image5.JPG', 'image6.jpg', 'image7.jpg')
+    images.push(image4, image2,image3, image1, image5, image6, image7)
     images.push()
 
     let time = 8;

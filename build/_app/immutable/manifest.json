@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-dd7adc46.js",
+    "file": "start-562341fd.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -37,7 +37,7 @@
     ]
   },
   "src/routes/bylaws.svelte": {
-    "file": "pages/bylaws.svelte-d797500a.js",
+    "file": "pages/bylaws.svelte-f85330ef.js",
     "src": "src/routes/bylaws.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -50,6 +50,12 @@
     ],
     "css": [
       "assets/pages/bylaws.svelte-df827809.css"
+    ],
+    "assets": [
+      "assets/thetachi_national-5a476366.png",
+      "assets/thetachi_local-7dd189d1.png",
+      "assets/national_bylaws-72ef0d65.pdf",
+      "assets/local_bylaws-ee59c80e.pdf"
     ]
   },
   "src/routes/calendar.svelte": {
@@ -68,7 +74,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-dd990b66.js",
+    "file": "pages/index.svelte-723f52ef.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -83,6 +89,17 @@
       "assets/pages/index.svelte-21b9a2d2.css"
     ],
     "assets": [
+      "assets/frontimage1-8116bc5c.png",
+      "assets/frontimage2-71124033.png",
+      "assets/frontimage3-1cbe7764.png",
+      "assets/frontimage4-abc27fd7.png",
+      "assets/image1-cf886db3.jpg",
+      "assets/image2-77b898d9.jpg",
+      "assets/image3-57212e56.jpg",
+      "assets/image4-861ebbf6.jpg",
+      "assets/image5-ac9d86a0.jpg",
+      "assets/image6-b82f76b9.jpg",
+      "assets/image7-d1025753.jpg",
       "assets/about_image-93132f93.png"
     ]
   },
@@ -128,7 +145,7 @@
       "_stores-e5d36224.js"
     ],
     "css": [
-      "assets/pages/positions.svelte-0bd344a7.css"
+      "assets/MobileNavbar-1cde24e4.css"
     ]
   },
   "src/routes/testing.svelte": {
@@ -163,7 +180,7 @@
       "_stores-e5d36224.js"
     ],
     "css": [
-      "assets/pages/positions.svelte-0bd344a7.css"
+      "assets/MobileNavbar-1cde24e4.css"
     ]
   },
   "_Footer-6dda422f.js": {

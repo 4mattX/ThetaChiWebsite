@@ -4,6 +4,8 @@
 
 <script>
     import about from "../assets/images/about_image.png"
+    import aboutFile1 from "../assets/info/about1.txt?raw"
+    import aboutFile2 from "../assets/info/about2.txt?raw"
 
 </script>
 
@@ -17,8 +19,10 @@
                 </div>
                 <div class="md:7/12 lg:w-6/12">
                     <h1 class="text-2xl md:text-4xl text-secondary">About Us</h1>
-                    <p class="mt-6">Theta Chi is one of the oldest men’s college fraternities in North America. Founded in 1856, Theta Chi Fraternity is a men’s collegiate fraternity with more than 200,000 initiated members and has established 245 chapters.</p>
-                    <p class="mt-4">Theta Rho is among these 245 chapters. We live by our motto "An Assisting Hand" through our philanthropy endeavors and inclusivity.</p>
+                    <p class="mt-6">{aboutFile1}</p>
+                    <p class="mt-6">{aboutFile2}</p>
+<!--                    <p class="mt-6">Theta Chi is one of the oldest men’s college fraternities in North America. Founded in 1856, Theta Chi Fraternity is a men’s collegiate fraternity with more than 200,000 initiated members and has established 245 chapters.</p>-->
+<!--                    <p class="mt-4">Theta Rho is among these 245 chapters. We live by our motto "An Assisting Hand" through our philanthropy endeavors and inclusivity.</p>-->
 
                     <div class="py-10">
                         <button class="btn btn-primary btn-2xl text-xl px-10">Rush Theta Chi</button>

@@ -2,6 +2,11 @@
     export const prerender = true;
 </script>
 
+<script>
+    import alumniTxt1 from "../assets/info/alumni1.txt?raw"
+    import alumniTxt2 from "../assets/info/alumni2.txt?raw"
+</script>
+
 <main class="bg-neutral">
     <div class="py-16">
         <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
@@ -11,9 +16,13 @@
                 </div>
                 <div class="md:7/12 lg:w-6/12 invert">
                     <div class="text-2xl">
-                        <p>We are brothers for life. No matter where life takes you after graduation, we are one big family</p>
+                        <p>{alumniTxt1}</p>
                         <br>
-                        <p>Theta Rho is home to the most active alumni association at McNeese State University!</p>
+                        <p>{alumniTxt2}</p>
+                        <br>
+                        <button class="btn btn-primary btn-2xl text-xl px-10 invert">
+                            <a href="https://www.facebook.com/groups/150377078352778/?ref=share" target="_blank">Alumni Facebook</a>
+                        </button>
                     </div>
 
                 </div>

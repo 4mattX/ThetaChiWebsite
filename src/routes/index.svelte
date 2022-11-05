@@ -128,8 +128,8 @@
         <div class="py-24"></div>
         <About />
         <Filler />
-        <Photogrid />
         <div id="alumni"></div>
+        <Photogrid />
         <Alumni />
         <Filler2 />
         <Footer />

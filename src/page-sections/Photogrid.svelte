@@ -4,6 +4,10 @@
 
 <script>
     $: innerWidth = 0
+    import frontimage1 from "../assets/images/frontimage1.png"
+    import frontimage2 from "../assets/images/frontimage2.png"
+    import frontimage3 from "../assets/images/frontimage3.png"
+    import frontimage4 from "../assets/images/frontimage4.png"
 </script>
 
 <svelte:window bind:innerWidth/>
@@ -13,19 +17,19 @@
         <div class="flex flex-wrap">
             <div class="w-full md:w-1/2 lg:w-1/4 mb-4 relative p-4">
                 <p class="absolute left-1/2 -translate-x-1/2 py-48 font-bold text-white text-4xl drop-shadow-2xl">BROTHERHOOD</p>
-                <img src="frontimage1.png" alt="">
+                <img src="{frontimage1}" alt="">
             </div>
             <div class="w-full md:w-1/2 lg:w-1/4 mb-4 relative p-4">
                 <p class="absolute left-1/2 -translate-x-1/2 py-48 font-bold text-white text-4xl drop-shadow-2xl">SCHOLARS</p>
-                <img src="frontimage2.png" alt="">
+                <img src="{frontimage2}" alt="">
             </div>
             <div class="w-full md:w-1/2 lg:w-1/4 mb-4 relative p-4">
                 <p class="absolute left-1/2 -translate-x-1/2 py-48 font-bold text-white text-4xl drop-shadow-2xl">SOCIAL</p>
-                <img src="frontimage3.png" alt="">
+                <img src="{frontimage3}" alt="">
             </div>
             <div class="w-full md:w-1/2 lg:w-1/4 mb-4 relative p-4">
                 <p class="absolute left-1/2 -translate-x-1/2 py-48 font-bold text-white text-4xl drop-shadow-2xl">SERVICE</p>
-                <img src="frontimage4.png" alt="">
+                <img src="{frontimage4}" alt="">
             </div>
         </div>
 
