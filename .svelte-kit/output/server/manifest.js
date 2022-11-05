@@ -1,9 +1,9 @@
 export const manifest = {
 	appDir: "_app",
-	assets: new Set(["about_image.png","favicon.png","frontimage1.png","frontimage2.png","frontimage3.png","frontimage4.png","image1.JPG","image2.jpg","image3.jpg","image4.JPG","image5.JPG","image6.jpg","image7.jpg","local_bylaws.pdf","national_bylaws.pdf","nothing.png","thetachi_local.PNG","thetachi_national.png"]),
+	assets: new Set(["favicon.png","frontimage1.png","frontimage2.png","frontimage3.png","frontimage4.png","image1.JPG","image2.jpg","image3.jpg","image4.JPG","image5.JPG","image6.jpg","image7.jpg","local_bylaws.pdf","national_bylaws.pdf","nothing.png","thetachi_local.PNG","thetachi_national.png"]),
 	mimeTypes: {".png":"image/png",".JPG":"image/jpeg",".jpg":"image/jpeg",".pdf":"application/pdf",".PNG":"image/png"},
 	_: {
-		entry: {"file":"start-409e66cc.js","imports":["start-409e66cc.js","chunks/index-97917cf1.js","chunks/preload-helper-60cab3ee.js"],"stylesheets":[]},
+		entry: {"file":"start-dd7adc46.js","imports":["start-dd7adc46.js","chunks/index-97917cf1.js","chunks/preload-helper-60cab3ee.js"],"stylesheets":[]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),

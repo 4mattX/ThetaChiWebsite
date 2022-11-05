@@ -71,6 +71,9 @@
     ],
     "css": [
       "assets/entries/pages/index.svelte-827a725d.css"
+    ],
+    "assets": [
+      "assets/about_image-93132f93.png"
     ]
   },
   "src/routes/officers.svelte": {

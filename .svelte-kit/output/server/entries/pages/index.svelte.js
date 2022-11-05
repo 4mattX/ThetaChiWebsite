@@ -1,4 +1,4 @@
-import { c as create_ssr_component, e as escape, v as validate_component, d as add_styles } from "../../chunks/index-ba4a3d31.js";
+import { c as create_ssr_component, e as escape, b as add_attribute, v as validate_component, d as add_styles } from "../../chunks/index-ba4a3d31.js";
 import { N as Navbar } from "../../chunks/Navbar-4741e23e.js";
 import { M as MobileNavbar } from "../../chunks/MobileNavbar-a890cfac.js";
 import { F as Footer } from "../../chunks/Footer-ad1e3ee8.js";
@@ -118,8 +118,9 @@ const Background = create_ssr_component(($$result, $$props, $$bindings, slots) =
 
 `;
 });
+var about = "/_app/immutable/assets/about_image-93132f93.png";
 const About = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<main><div class="${""}"><div class="${"container m-auto px-6 text-gray-600 md:px-12 xl:px-6"}"><div class="${"space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12"}"><div class="${"md:5/12 lg:w-5/12"}"><img src="${"about_image.png"}" alt="${"image"}" loading="${"lazy"}" width="${""}" height="${""}"></div>
+  return `<main><div class="${""}"><div class="${"container m-auto px-6 text-gray-600 md:px-12 xl:px-6"}"><div class="${"space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12"}"><div class="${"md:5/12 lg:w-5/12"}"><img${add_attribute("src", about, 0)} alt="${"image"}" loading="${"lazy"}" width="${""}" height="${""}"></div>
                 <div class="${"md:7/12 lg:w-6/12"}"><h1 class="${"text-2xl md:text-4xl text-secondary"}">About Us</h1>
                     <p class="${"mt-6"}">Theta Chi is one of the oldest men\u2019s college fraternities in North America. Founded in 1856, Theta Chi Fraternity is a men\u2019s collegiate fraternity with more than 200,000 initiated members and has established 245 chapters.</p>
                     <p class="${"mt-4"}">Theta Rho is among these 245 chapters. We live by our motto &quot;An Assisting Hand&quot; through our philanthropy endeavors and inclusivity.</p>

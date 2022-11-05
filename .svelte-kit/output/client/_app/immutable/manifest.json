@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-409e66cc.js",
+    "file": "start-dd7adc46.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -68,7 +68,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-60b7d03b.js",
+    "file": "pages/index.svelte-dd990b66.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -81,6 +81,9 @@
     ],
     "css": [
       "assets/pages/index.svelte-21b9a2d2.css"
+    ],
+    "assets": [
+      "assets/about_image-93132f93.png"
     ]
   },
   "src/routes/officers.svelte": {
@@ -125,7 +128,7 @@
       "_stores-e5d36224.js"
     ],
     "css": [
-      "assets/MobileNavbar-1cde24e4.css"
+      "assets/pages/positions.svelte-0bd344a7.css"
     ]
   },
   "src/routes/testing.svelte": {
@@ -160,7 +163,7 @@
       "_stores-e5d36224.js"
     ],
     "css": [
-      "assets/MobileNavbar-1cde24e4.css"
+      "assets/pages/positions.svelte-0bd344a7.css"
     ]
   },
   "_Footer-6dda422f.js": {
