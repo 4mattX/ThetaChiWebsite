@@ -30,8 +30,8 @@ const Navbar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                     <svg width="${"20"}" height="${"20"}" xmlns="${"http://www.w3.org/2000/svg"}" fill="${"none"}" viewBox="${"0 0 24 24"}" class="${"inline-block h-5 w-5 stroke-current md:h-6 md:w-6"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"}"></path></svg></a>
                 <ul class="${"p-2 bg-base-100"}"><li data-set-theme="${"light"}" data-act-class="${"ACTIVECLASS"}"><a>Light</a></li>
                     <li data-set-theme="${"dark"}" data-act-class="${"ACTIVECLASS"}"><a>Dark</a></li>
-                    <li data-set-theme="${"autumn"}" data-act-class="${"ACTIVECLASS"}"><a>Autumn</a></li>
                     <li data-set-theme="${"emerald"}" data-act-class="${"ACTIVECLASS"}"><a>Emerald</a></li>
+                    <li data-set-theme="${"autumn"}" data-act-class="${"ACTIVECLASS"}"><a>Autumn</a></li>
                     <li data-set-theme="${"synthwave"}" data-act-class="${"ACTIVECLASS"}"><a>Synthwave</a></li>
                     <li data-set-theme="${"retro"}" data-act-class="${"ACTIVECLASS"}"><a>Retro</a></li>
                     <li data-set-theme="${"valentine"}" data-act-class="${"ACTIVECLASS"}"><a>Valentine</a></li>

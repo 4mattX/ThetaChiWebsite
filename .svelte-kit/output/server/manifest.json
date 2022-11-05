@@ -37,12 +37,12 @@
     "isEntry": true,
     "imports": [
       "_index-1e55e8d1.js",
-      "_MobileNavbar-c8f96f85.js",
-      "_Footer-32e5d98a.js",
+      "_MobileNavbar-95c3e4b7.js",
+      "_Footer-7276cad8.js",
       "_stores-adbcade9.js"
     ],
     "css": [
-      "assets/entries/pages/bylaws.svelte-f69c5a6b.css"
+      "assets/entries/pages/bylaws.svelte-a47ee60d.css"
     ],
     "assets": [
       "assets/thetachi_national-5a476366.png",
@@ -57,11 +57,11 @@
     "isEntry": true,
     "imports": [
       "_index-1e55e8d1.js",
-      "_MobileNavbar-c8f96f85.js",
+      "_MobileNavbar-95c3e4b7.js",
       "_stores-adbcade9.js"
     ],
     "css": [
-      "assets/MobileNavbar-6666dab9.css"
+      "assets/MobileNavbar-ed072094.css"
     ]
   },
   "src/routes/index.svelte": {
@@ -70,13 +70,13 @@
     "isEntry": true,
     "imports": [
       "_index-1e55e8d1.js",
-      "_Navbar-8e76ed0a.js",
-      "_MobileNavbar-c8f96f85.js",
-      "_Footer-32e5d98a.js",
+      "_Navbar-cf69b7b0.js",
+      "_MobileNavbar-95c3e4b7.js",
+      "_Footer-7276cad8.js",
       "_stores-adbcade9.js"
     ],
     "css": [
-      "assets/entries/pages/index.svelte-827a725d.css"
+      "assets/entries/pages/index.svelte-0b498154.css"
     ],
     "assets": [
       "assets/frontimage1-8116bc5c.png",
@@ -99,12 +99,12 @@
     "isEntry": true,
     "imports": [
       "_index-1e55e8d1.js",
-      "_MobileNavbar-c8f96f85.js",
-      "_Footer-32e5d98a.js",
+      "_MobileNavbar-95c3e4b7.js",
+      "_Footer-7276cad8.js",
       "_stores-adbcade9.js"
     ],
     "css": [
-      "assets/entries/pages/officers.svelte-b2e6be39.css"
+      "assets/entries/pages/officers.svelte-e3e165dc.css"
     ],
     "assets": [
       "assets/president-0b57aa4e.png",
@@ -129,11 +129,11 @@
     "isEntry": true,
     "imports": [
       "_index-1e55e8d1.js",
-      "_Navbar-8e76ed0a.js",
+      "_Navbar-cf69b7b0.js",
       "_stores-adbcade9.js"
     ],
     "css": [
-      "assets/MobileNavbar-6666dab9.css"
+      "assets/MobileNavbar-ed072094.css"
     ]
   },
   "src/routes/testing.svelte": {
@@ -150,18 +150,18 @@
   "_index-1e55e8d1.js": {
     "file": "chunks/index-1e55e8d1.js"
   },
-  "_MobileNavbar-c8f96f85.js": {
-    "file": "chunks/MobileNavbar-c8f96f85.js",
+  "_MobileNavbar-95c3e4b7.js": {
+    "file": "chunks/MobileNavbar-95c3e4b7.js",
     "imports": [
       "_index-1e55e8d1.js",
       "_stores-adbcade9.js"
     ],
     "css": [
-      "assets/MobileNavbar-6666dab9.css"
+      "assets/MobileNavbar-ed072094.css"
     ]
   },
-  "_Footer-32e5d98a.js": {
-    "file": "chunks/Footer-32e5d98a.js",
+  "_Footer-7276cad8.js": {
+    "file": "chunks/Footer-7276cad8.js",
     "imports": [
       "_index-1e55e8d1.js"
     ]
@@ -172,8 +172,8 @@
       "_index-1e55e8d1.js"
     ]
   },
-  "_Navbar-8e76ed0a.js": {
-    "file": "chunks/Navbar-8e76ed0a.js",
+  "_Navbar-cf69b7b0.js": {
+    "file": "chunks/Navbar-cf69b7b0.js",
     "imports": [
       "_index-1e55e8d1.js",
       "_stores-adbcade9.js"

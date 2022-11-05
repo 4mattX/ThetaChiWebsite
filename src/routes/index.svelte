@@ -5,6 +5,7 @@
 <script>
 
     import Photogrid from "../page-sections/Photogrid.svelte";
+    import { browser} from "$app/env";
 
     let scroll
     $: innerWidth = 0
@@ -18,6 +19,15 @@
     import Filler from "../page-sections/Filler.svelte";
     import Filler2 from "../page-sections/Filler2.svelte";
     import PolygonHeader from "../objects/PolygonHeader.svelte";
+
+    import { writable } from "svelte/store"
+
+    export const firstTime = writable(browser && localStorage.getItem("theme") || "autumn")
+
+    firstTime.subscribe((val) => {
+        if (browser) return (localStorage.theme = val)
+    });
+
 </script>
 
 <!--<svelte:window bind:scrollY={scroll} />-->

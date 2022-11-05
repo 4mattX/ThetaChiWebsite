@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-562341fd.js",
+    "file": "start-1bae9268.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -37,19 +37,19 @@
     ]
   },
   "src/routes/bylaws.svelte": {
-    "file": "pages/bylaws.svelte-f85330ef.js",
+    "file": "pages/bylaws.svelte-dfa7ca4d.js",
     "src": "src/routes/bylaws.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-97917cf1.js",
-      "_Navbar-c9a83ac9.js",
-      "_MobileNavbar-c3874073.js",
-      "_Footer-6dda422f.js",
+      "_Navbar-a83ef978.js",
+      "_MobileNavbar-3ab40fc1.js",
+      "_Footer-92941a21.js",
       "_stores-e5d36224.js"
     ],
     "css": [
-      "assets/pages/bylaws.svelte-df827809.css"
+      "assets/pages/bylaws.svelte-a7df3063.css"
     ],
     "assets": [
       "assets/thetachi_national-5a476366.png",
@@ -59,7 +59,7 @@
     ]
   },
   "src/routes/calendar.svelte": {
-    "file": "pages/calendar.svelte-94718e27.js",
+    "file": "pages/calendar.svelte-f8ffc8bb.js",
     "src": "src/routes/calendar.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -67,26 +67,26 @@
       "_index-97917cf1.js",
       "_stores-e5d36224.js",
       "_preload-helper-60cab3ee.js",
-      "_MobileNavbar-c3874073.js"
+      "_MobileNavbar-3ab40fc1.js"
     ],
     "css": [
-      "assets/pages/calendar.svelte-b321f8ac.css"
+      "assets/pages/calendar.svelte-4e8c5c87.css"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-723f52ef.js",
+    "file": "pages/index.svelte-70345330.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-97917cf1.js",
-      "_Navbar-c9a83ac9.js",
-      "_MobileNavbar-c3874073.js",
-      "_Footer-6dda422f.js",
+      "_Navbar-a83ef978.js",
+      "_MobileNavbar-3ab40fc1.js",
+      "_Footer-92941a21.js",
       "_stores-e5d36224.js"
     ],
     "css": [
-      "assets/pages/index.svelte-21b9a2d2.css"
+      "assets/pages/index.svelte-90436bcb.css"
     ],
     "assets": [
       "assets/frontimage1-8116bc5c.png",
@@ -104,18 +104,18 @@
     ]
   },
   "src/routes/officers.svelte": {
-    "file": "pages/officers.svelte-610659d3.js",
+    "file": "pages/officers.svelte-a35172ca.js",
     "src": "src/routes/officers.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-97917cf1.js",
       "_stores-e5d36224.js",
-      "_MobileNavbar-c3874073.js",
-      "_Footer-6dda422f.js"
+      "_MobileNavbar-3ab40fc1.js",
+      "_Footer-92941a21.js"
     ],
     "css": [
-      "assets/pages/officers.svelte-28a7fcbc.css"
+      "assets/pages/officers.svelte-1735d50f.css"
     ],
     "assets": [
       "assets/president-0b57aa4e.png",
@@ -135,17 +135,17 @@
     ]
   },
   "src/routes/positions.svelte": {
-    "file": "pages/positions.svelte-42bbf050.js",
+    "file": "pages/positions.svelte-8a7924ee.js",
     "src": "src/routes/positions.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-97917cf1.js",
-      "_Navbar-c9a83ac9.js",
+      "_Navbar-a83ef978.js",
       "_stores-e5d36224.js"
     ],
     "css": [
-      "assets/MobileNavbar-1cde24e4.css"
+      "assets/MobileNavbar-5364ab26.css"
     ]
   },
   "src/routes/testing.svelte": {
@@ -166,25 +166,25 @@
   "_preload-helper-60cab3ee.js": {
     "file": "chunks/preload-helper-60cab3ee.js"
   },
-  "_Navbar-c9a83ac9.js": {
-    "file": "chunks/Navbar-c9a83ac9.js",
+  "_Navbar-a83ef978.js": {
+    "file": "chunks/Navbar-a83ef978.js",
     "imports": [
       "_index-97917cf1.js",
       "_stores-e5d36224.js"
     ]
   },
-  "_MobileNavbar-c3874073.js": {
-    "file": "chunks/MobileNavbar-c3874073.js",
+  "_MobileNavbar-3ab40fc1.js": {
+    "file": "chunks/MobileNavbar-3ab40fc1.js",
     "imports": [
       "_index-97917cf1.js",
       "_stores-e5d36224.js"
     ],
     "css": [
-      "assets/MobileNavbar-1cde24e4.css"
+      "assets/MobileNavbar-5364ab26.css"
     ]
   },
-  "_Footer-6dda422f.js": {
-    "file": "chunks/Footer-6dda422f.js",
+  "_Footer-92941a21.js": {
+    "file": "chunks/Footer-92941a21.js",
     "imports": [
       "_index-97917cf1.js"
     ]

@@ -66,8 +66,8 @@
                 <ul class="p-2 bg-base-100">
                     <li data-set-theme="light" data-act-class="ACTIVECLASS"><a>Light</a></li>
                     <li data-set-theme="dark" data-act-class="ACTIVECLASS"><a>Dark</a></li>
-                    <li data-set-theme="autumn" data-act-class="ACTIVECLASS"><a>Autumn</a></li>
                     <li data-set-theme="emerald" data-act-class="ACTIVECLASS"><a>Emerald</a></li>
+                    <li data-set-theme="autumn" data-act-class="ACTIVECLASS"><a>Autumn</a></li>
                     <li data-set-theme="synthwave" data-act-class="ACTIVECLASS"><a>Synthwave</a></li>
                     <li data-set-theme="retro" data-act-class="ACTIVECLASS"><a>Retro</a></li>
                     <li data-set-theme="valentine" data-act-class="ACTIVECLASS"><a>Valentine</a></li>
